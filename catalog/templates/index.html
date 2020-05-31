@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Blood pressure Home</h1>
+<p>Welcome to Blood pressure monitor</p>
+<h2>Dynamic content</h2>
+<p>The library has the following record counts:</p>
+<ul>
+    <li><strong>Users:</strong> {{ num_users }}</li>
+    <li><strong>Measurement:</strong> {{ num_measurement }}</li>    
+</ul>
+{% endblock %}

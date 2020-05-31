@@ -1,0 +1,15 @@
+{% extends "base_generic.html"%}
+
+{% block content%}
+<h1>
+Список измерений </ h1> {% if measurement_list%}
+<ul>
+    {% для измерения в measurement_list%}
+    <li>
+        <a href=" {{measurement.get_absolute_url}} "> {{measurement.title}} </a> ({{measurement.user}})
+        </ li>
+        {% endfor%}
+        </ ul> {% else%}
+        <p>
+            Пока нет данных об измерениях. </ P> {% endif%}
+            {% endblock%}
